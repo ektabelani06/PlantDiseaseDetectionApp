@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "48752852642",
+    "firebase_url": "https://plantdoctor-65065.firebaseio.com",
+    "project_id": "plantdoctor-65065",
+    "storage_bucket": "plantdoctor-65065.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:48752852642:android:20b530b6605e7f002b61fb",
+        "android_client_info": {
+          "package_name": "com.example.project"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "48752852642-om24gbbupbncf23to1g86p2j14tufffg.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.project",
+            "certificate_hash": "d5696aae9df75b5af2b39b345b2ee638e91a2230"
+          }
+        },
+        {
+          "client_id": "48752852642-r46thfsc70o9bcpacp48lfdkheqg3fnm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBk_O3iXyIOQ_RntV56d0y9tt5O5I-d-HE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "48752852642-r46thfsc70o9bcpacp48lfdkheqg3fnm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

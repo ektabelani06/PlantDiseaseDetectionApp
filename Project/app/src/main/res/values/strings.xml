@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Project</string>
+    <string name="password_error">Please enter a password</string>
+    <string name="error_invalid_password">Please enter a minimum password of 6 characters</string>
+    <string name="name_error">Please enter your username</string>
+    <string name="buttonTakePhoto">Start Camera</string>
+    <string name="buttonSelectPhoto">Select Photo</string>
+    <string name="descriptionImage">View for displaying image</string>
+    <string name="buttonDiagnose">Detect</string>
+    <string name="defaultImage">Default image set now...</string>
+
+</resources>
