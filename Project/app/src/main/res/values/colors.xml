@@ -6,6 +6,8 @@
     <color name="DarkGreen">#006400</color>
     <color name="olive">#008000</color>
     <color name="green">#a4c639 </color>
+    <color name="lightgreen">#90EE90 </color>
+    <color name="limegreen">#008000</color>
 
     <color name="login_form_details">#ccffffff</color>
     <color name="login_form_details_light">#1affffff</color>

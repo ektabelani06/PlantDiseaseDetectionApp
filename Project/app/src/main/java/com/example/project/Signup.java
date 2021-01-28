@@ -18,6 +18,7 @@ import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.auth.UserProfileChangeRequest;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
@@ -65,7 +66,23 @@ public class Signup extends AppCompatActivity {
                         public void onSuccess(Void aVoid) {
                             Toast.makeText(getApplicationContext(),"Registered Successfully",Toast.LENGTH_SHORT).show();
                             //mdialog.dismiss();
+                            mAuth.getCurrentUser().getUid();
+                            String id =  mAuth.getCurrentUser().getUid();
+                            FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
+                            //set Users display name
+                            UserProfileChangeRequest profileUpdates = new UserProfileChangeRequest.Builder()
+                                    .setDisplayName(username.getText().toString())
+                                    .build();
+
+                            user.updateProfile(profileUpdates).addOnCompleteListener(new OnCompleteListener<Void>() {
+                                @Override
+                                public void onComplete(@NonNull Task<Void> task) {
+                                    startActivity(new Intent(getApplicationContext(),Home.class));
+                                }
+                            });
+
                             startActivity(new Intent(getApplicationContext(),Home.class));
+
                         }
                     }).addOnFailureListener(new OnFailureListener() {
                         @Override

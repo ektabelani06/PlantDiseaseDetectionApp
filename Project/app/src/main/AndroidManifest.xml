@@ -4,6 +4,7 @@
 
 
 
+
     <uses-feature
         android:name="android.hardware.camera"
         android:required="false" />
@@ -15,7 +16,7 @@
         android:required="false" />
 
     <uses-permission android:name="android.permission.CAMERA" />
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
     <application
         android:allowBackup="true"
@@ -24,9 +25,21 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Home"></activity>
-        <activity android:name=".ForgetPassword" />
 
+        <!--
+               Set to true if your app is Standalone, that is, it does not require the handheld
+               app to run.
+        -->
+        <meta-data
+            android:name="com.google.android.wearable.standalone"
+            android:value="true" />
+
+
+        <activity android:name=".chat_activity" />
+        <activity android:name=".Disease_detail_activity" />
+        <activity android:name=".EnterDetail" />
+        <activity android:name=".Home" />
+        <activity android:name=".ForgetPassword" />
         <activity android:name=".Signup" />
         <activity android:name=".LoginPage" />
         <activity android:name=".Welcome">
